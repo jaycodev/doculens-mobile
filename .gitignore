@@ -1,0 +1,31 @@
+build/
+DerivedData/
+
+# Logs compilacion
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+*.xcuser
+*.mode2v3
+*.xcuserdatad
+
+# Swift Package Manager
+.swiftpm/
+Package.resolved
+
+# Simulator files
+*.app
+*.ipa
+
+# SwiftLint
+.swiftlint.yml
+
+# Carthage
+Carthage/
+
+# Fastlane
+fastlane/report.xml
+
+# macOS
+.DS_Store
+.localized
