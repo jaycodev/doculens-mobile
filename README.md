@@ -1,4 +1,4 @@
-# DocuLens – Smart Document Scanner & Organizer for iOS
+# DocuLens – Document Scanner & Organizer for iOS
 
 ![image]()
 
