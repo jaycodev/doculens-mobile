@@ -194,8 +194,82 @@
                     <view key="view" contentMode="scaleToFill" id="mP8-f2-oo3">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ejemplo" borderStyle="roundedRect" placeholder="Tu nombre de usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fDY-X4-P2q">
+                                <rect key="frame" x="20" y="213" width="353" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre de usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0lo-QG-5yT">
+                                <rect key="frame" x="20" y="182" width="353" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="correo@ejemplo.com" borderStyle="roundedRect" placeholder="Tu correo electronico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T8p-6T-F3h">
+                                <rect key="frame" x="20" y="353" width="353" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXo-qH-IGz">
+                                <rect key="frame" x="20" y="267" width="353" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Cambiar nombre de usuario"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWB-xg-7Vs">
+                                <rect key="frame" x="20" y="407" width="353" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Cambiar correo electronico"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69V-af-aCn">
+                                <rect key="frame" x="20" y="467" width="353" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Cambiar contraseña"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8Z-d3-cGe">
+                                <rect key="frame" x="20" y="527" width="353" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Eliminar cuenta">
+                                    <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                    <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correo electronico" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ag-Zm-nDF">
+                                <rect key="frame" x="20" y="322" width="353" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="zNe-rs-vjW"/>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="T8p-6T-F3h" firstAttribute="top" secondItem="6Ag-Zm-nDF" secondAttribute="bottom" constant="10" id="6EP-S7-MH8"/>
+                            <constraint firstItem="6Ag-Zm-nDF" firstAttribute="top" secondItem="pXo-qH-IGz" secondAttribute="bottom" constant="20" id="7x3-Qz-ftn"/>
+                            <constraint firstItem="zNe-rs-vjW" firstAttribute="trailing" secondItem="fDY-X4-P2q" secondAttribute="trailing" constant="20" id="9ax-G5-7UJ"/>
+                            <constraint firstItem="fDY-X4-P2q" firstAttribute="leading" secondItem="zNe-rs-vjW" secondAttribute="leading" constant="20" id="COL-ga-cmx"/>
+                            <constraint firstItem="pXo-qH-IGz" firstAttribute="top" secondItem="fDY-X4-P2q" secondAttribute="bottom" constant="20" id="JEi-fj-uLo"/>
+                            <constraint firstItem="T8p-6T-F3h" firstAttribute="top" secondItem="6Ag-Zm-nDF" secondAttribute="bottom" constant="10" id="MBn-cd-TL6"/>
+                            <constraint firstItem="T8p-6T-F3h" firstAttribute="leading" secondItem="zNe-rs-vjW" secondAttribute="leading" constant="20" id="Qbf-qF-WGV"/>
+                            <constraint firstItem="zNe-rs-vjW" firstAttribute="trailing" secondItem="69V-af-aCn" secondAttribute="trailing" constant="20" id="TZS-Ls-e38"/>
+                            <constraint firstItem="69V-af-aCn" firstAttribute="leading" secondItem="zNe-rs-vjW" secondAttribute="leading" constant="20" id="U6Y-u3-mbN"/>
+                            <constraint firstItem="zNe-rs-vjW" firstAttribute="trailing" secondItem="pXo-qH-IGz" secondAttribute="trailing" constant="20" id="Zbk-9y-ivN"/>
+                            <constraint firstItem="zNe-rs-vjW" firstAttribute="trailing" secondItem="0lo-QG-5yT" secondAttribute="trailing" constant="20" id="eSb-8g-xdj"/>
+                            <constraint firstItem="fDY-X4-P2q" firstAttribute="top" secondItem="0lo-QG-5yT" secondAttribute="bottom" constant="10" id="gfb-6v-0mU"/>
+                            <constraint firstItem="ZWB-xg-7Vs" firstAttribute="leading" secondItem="zNe-rs-vjW" secondAttribute="leading" constant="20" id="gjz-go-3ba"/>
+                            <constraint firstItem="G8Z-d3-cGe" firstAttribute="top" secondItem="69V-af-aCn" secondAttribute="bottom" constant="25" id="gkL-xB-sjI"/>
+                            <constraint firstItem="0lo-QG-5yT" firstAttribute="leading" secondItem="zNe-rs-vjW" secondAttribute="leading" constant="20" id="gt6-KY-VDN"/>
+                            <constraint firstItem="zNe-rs-vjW" firstAttribute="trailing" secondItem="T8p-6T-F3h" secondAttribute="trailing" constant="20" id="mJb-CN-H3r"/>
+                            <constraint firstItem="zNe-rs-vjW" firstAttribute="trailing" secondItem="6Ag-Zm-nDF" secondAttribute="trailing" constant="20" id="nMw-xT-vu9"/>
+                            <constraint firstItem="zNe-rs-vjW" firstAttribute="trailing" secondItem="G8Z-d3-cGe" secondAttribute="trailing" constant="20" id="nhA-IZ-yaz"/>
+                            <constraint firstItem="pXo-qH-IGz" firstAttribute="leading" secondItem="zNe-rs-vjW" secondAttribute="leading" constant="20" id="rOA-dq-m0R"/>
+                            <constraint firstItem="69V-af-aCn" firstAttribute="top" secondItem="ZWB-xg-7Vs" secondAttribute="bottom" constant="25" id="uVe-ii-DUc"/>
+                            <constraint firstItem="zNe-rs-vjW" firstAttribute="trailing" secondItem="ZWB-xg-7Vs" secondAttribute="trailing" constant="20" id="uxL-Vw-vFB"/>
+                            <constraint firstItem="G8Z-d3-cGe" firstAttribute="leading" secondItem="zNe-rs-vjW" secondAttribute="leading" constant="20" id="vnK-58-xkz"/>
+                            <constraint firstItem="6Ag-Zm-nDF" firstAttribute="leading" secondItem="zNe-rs-vjW" secondAttribute="leading" constant="20" id="zOD-5l-7Ks"/>
+                            <constraint firstItem="0lo-QG-5yT" firstAttribute="top" secondItem="zNe-rs-vjW" secondAttribute="top" constant="20" id="zUe-R0-cMx"/>
+                            <constraint firstItem="ZWB-xg-7Vs" firstAttribute="top" secondItem="T8p-6T-F3h" secondAttribute="bottom" constant="20" id="zmy-eg-iUT"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Mi Cuenta" id="uRt-nb-UiB"/>
                 </viewController>
@@ -253,16 +327,19 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray3Color">
-            <color red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray4Color">
-            <color red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray6Color">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
-            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
